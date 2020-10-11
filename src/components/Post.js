@@ -22,8 +22,10 @@ export default class Post extends React.Component{
             ]
            
         });
-        this.setState({newCommentText: ''}),
-        event.prevetDefault();
+        
+        this.setState({ newCommentText: ''});
+        
+        event.preventDefault();
     }
 
 
