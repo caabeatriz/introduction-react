@@ -17,7 +17,7 @@ export default class Post extends React.Component{
     handleSubmit(event){
         this.setState({
             comments:[
-                this.state.comments,
+                ...this.state.comments,
                 {text: this.state.newCommentText}
             ]
            
